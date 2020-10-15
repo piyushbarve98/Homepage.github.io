@@ -36,7 +36,9 @@ img{
     display: flex;
     /* flex-direction: column; */
 }
-
+.button{
+    font-family: 'Quicksand', sans-serif;
+}
 .fa-instagram{
     font-size: 5em;
     margin-right: 3rem;
