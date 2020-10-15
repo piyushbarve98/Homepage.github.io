@@ -1,0 +1,273 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Tutorial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use-->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar has-shadow is-dark" style="font-family: 'Quicksand', sans-serif;">
+        <div class="navbar-brand">
+            
+            <a href="" class="navbar-item is-uppercase has-text-light is-size-4 py-2 pl-4" style="font-family: 'Permanent Marker', cursive;">Anime <i class="fa fa-github-alt px-2" aria-hidden="true"></i></a>
+            <a class='navbar-burger ' id='burger'>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </a>
+        </div>
+        <div class="navbar-menu" id='menu'>
+            <div class="navbar-end">
+                <a class='navbar-item ' href='#main'>Home</a>
+                <a class='navbar-item ' id='nav-projects'>Projects</a>
+                <a class='navbar-item ' href="https://piyushbarve98.github.io/piyushbarve.github.io/contactUs.html">Contact-us</a>
+                <a class='navbar-item ' id='nav-about'>About-us</a>
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="section has-background-light mt-0 pt-0 " id='main'>
+        <div class="section pt-4 pb-0">
+            <nav class="breadcrumb mt-6">
+                <ul class="container is-size-7-mobile is-size-6-desktop">
+                    <li class="is-active"><a href="#main">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    
+                    <li><a href="#msgCard">Message</a></li>
+                </ul>
+            </nav>
+        </div>
+           
+            <!-- modal section for all projects that is open when clicked on projects  -->
+            <div class="modal" id='modal1'>
+                <div class="modal-background"></div>
+                <div class="modal-content has-background-white px-5 py-5">
+                    <h1 class="title has-text-centered is-size-4">All Projects</h1>
+                    <div class="rows has-text-centered">
+                        <div class="row ">
+                            
+                                
+                            <a href='https://piyushbarve98.github.io/Employee_Data_System.github.io/' class="button is-success mx-3">Employee System</a>
+                            <a href='https://piyushbarve98.github.io/piyushbarve.github.io/' target="_blank" class="button is-success mx-3">QNA Application</a>
+                        
+                        </div>
+
+                        <div class="row my-5 ">
+                            <a href='https://piyushbarve98.github.io/GoogleBooksFinder.github.io/' class="button is-success mx-3">Google Books API</a>
+                            <a href='https://piyushbarve98.github.io/Login_Register_System_Firebase.github.io/'class="button is-success mx-3">Login System</a>
+                        </div>
+
+                        <div class="row ">
+                            <a href='https://piyushbarve98.github.io/AnimeNames.github.io/' class="button is-success mx-3">Cloud Animes</a>
+                            <a href='https://piyushbarve98.github.io/addBookNames.github.io/'class="button is-success mx-3">Anime Books</a>
+                        </div>
+                        <div class="row ">
+                            <button class="Button is-dark my-5" id='closeBtn'>Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal section for about us that is open when clicked on about us  -->
+            <div class="modal" id='modal2'>
+                <div class="modal-background"></div>
+                <div class="modal-content has-background-white px-5 py-5">
+                <h1 class="title has-text-centered">About</h1>
+                <p class="has-text-centered">Hey there, I am Piyush Barve BTech second year student with Information and Technolgy as major. Learning and working on Full stack web development and this website is one of my works .It includes some of my projects till now on web development and I will include more as they will complete. Have a look at them by clicking on view project. They are all responsive so they will work same on mobile phone as well.  </p>
+                
+                <div class="container has-text-centered">    
+                <button class="button is-dark my-5 " id='closeBtn2'>Close</button>
+                </div>   
+                    </div>
+                </div>
+        
+            <h1 class="title has-text-centered  pt-6 pb-2" id='myname'>Piyush Barve</h1>
+            <p class="subtitle has-text-centered is-size-4-desktop is-size-5-mobile ">A student working on full stack web development</p>
+    
+            <div class="container has-text-centered">
+                <a href='https://www.instagram.com/piyush_p3/' target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/piyushbarve98?tab=repositories" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=piyushpiyush1000@gmail.com" target="_blank" ><i class="fa fa-google"></i></a>
+            </div>
+            <div class="container mt-5" id='skills'>
+                <h3 class="title has-text-centered is-italic pt-6">Skills</h3>
+                <div class='columns has-text-centered'>
+                
+                <div class="column ">
+                <a class="button is-link">◐</a>
+                <a class="button is-info ">HTML </a>
+                <a class="button is-info ">CSS </a>
+                <a class="button is-info ">Javascript </a>
+                </div>
+                <div class="column">
+                <a class="button is-link">✇</a>
+                <a class="button is-info ">Node.js</a>
+                
+                <a class="button is-info ">MySql </a>
+                <a class="button is-info ">Firebase</a>
+                </div>
+
+                <div class="column">
+                    <a class="button is-link">☯</a>
+                    <a class="button is-info ">Responsive</a>
+                    <a class="button is-info ">Figma</a>
+                    <a class="button is-info ">Bulma</a>
+                </div>
+                
+            </div>
+            </div>
+            
+            <div class='container pt-6 mt-5'>
+                <h1 class="title has-text-centered " id='projects'>All Projects</h1>
+                <!-- card 1 -->
+                <div class="card my-6 ">
+                    
+                    <img src="assets/employee.jpg" >
+                    
+                    <div class="card-content">
+                      <h4 class="title is-size-4 mt-3">Employee Data System</h4>
+                      <p>In this Web Application a user can add ,delete or view the data of the Employee. It is created using plain HTML,CSS and javascript for front-end and node.js(express.js) and mysql for backend.Their are two versions that I have created one with Firebase (firestore) and one with node.js and mysql.</p>
+                      <a class='button is-dark mt-5 myBtn' href=" https://piyushbarve98.github.io/Employee_Data_System.github.io/">View Project</a>
+                      <a class='button is-dark mt-5 myBtn mx-3' href="https://github.com/piyushbarve98/Employee_Data_System">Project Code</a>
+                    </div>
+
+
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="card my-6">
+                    
+                        <img src="assets/qna.jpg" >
+                        
+                        <div class="card-content">
+                          <h4 class="title is-size-4 mt-3">QNA Application</h4>
+                          <p>It is a simple and basic HTML,CSS and Javascript based static web application that has a some easy questions related to development and also it evaluates points on the basis of users answers.  </p>
+                          <a class='button is-dark mt-5 myBtn' href="https://piyushbarve98.github.io/piyushbarve.github.io/" target="_blank" >View Project</a>
+                            <a class='button is-dark mt-5 myBtn mx-3' href="https://github.com/piyushbarve98/piyushbarve.github.io">Project Code</a>
+                        </div>
+    
+    
+                        </div>
+                        
+                        <!-- card 3 -->
+                        <div class="card my-6">
+                           
+                              <img src="assets/animeBooks.jpg" >
+                            
+                            <div class="card-content">
+                              <h4 class="title is-size-4 mt-3">Anime Books</h4>
+                              <p>It is a Todo type Web application in which user can add , delete and filter out his favourite books names on a well designed interface that is connected to the realtime database of firebase's firestore.It has dark mode functionality as well.</p>
+                              <a class='button is-dark mt-5 myBtn' href="https://piyushbarve98.github.io/addBookNames.github.io/">View Project</a>
+                            <a class='button is-dark mt-5 myBtn mx-3' href="https://github.com/piyushbarve98/addBookNames.github.io">Project Code</a>
+                            </div>
+        
+        
+                            </div>
+
+
+                        <!-- card 4 -->
+                        <div class="card my-6">
+                            
+                              <img src="assets/googleBooks.jpg" >
+                            
+                            <div class="card-content">
+                              <h4 class="title is-size-4 mt-3">Google Books Api</h4>
+                              <p>You can search information of almost any book that is availaible on google books and can read if any ebook is availaible through this web application which is created by using fetch functionality of javascript that lists all books related to  that searched query.</p>
+                              <a class='button is-dark mt-5 myBtn' href="https://piyushbarve98.github.io/GoogleBooksFinder.github.io/ ">View Project</a>
+                            <a class='button is-dark mt-5 myBtn mx-3' href="https://github.com/piyushbarve98/GoogleBooksFinder.github.io">Project Code</a>
+                            </div>
+        
+        
+                            </div>
+
+                            <!-- card 5 -->
+                        <div class="card my-6">
+                            
+                            <img src="assets/login.jpg" >
+                            
+                            <div class="card-content">
+                              <h4 class="title is-size-4 mt-3">Login and Registeration System</h4>
+                              <p>A fully validated Login and Registeration System created using HTML ,CSS and Javascript for front-end and Node.js. and MySql for backend.I have created three verions one with Firestore ,one with mysql, nodejs and last one with nodejs ,nedb.</p>
+                              <a class='button is-dark mt-5 myBtn' href="https://piyushbarve98.github.io/Login_Register_System_Firebase.github.io/">View Project</a>
+                              <a class='button is-dark mt-5 myBtn mx-3' href="https://github.com/piyushbarve98/Login_register_MySql">Project Code</a>
+                            </div>
+        
+        
+                            </div>
+
+                            <!-- card 6 -->
+                        <div class="card my-6">
+                            
+                              <img src="assets/cloudAnime.jpg" >
+                            
+                            <div class="card-content">
+                              <h4 class="title is-size-4 mt-3">Cloud Animes</h4>
+                              <p>Simple web application to add the names and type of your favourite animes on your list of animes so that you can remember them. It is connected with real time database of Firebase's firestore.</p>
+                              <a class='button is-dark mt-5 myBtn' href="https://piyushbarve98.github.io/AnimeNames.github.io/">View Project</a>
+                                <a class='button is-dark mt-5 myBtn mx-3' href="https://github.com/piyushbarve98/AnimeNames.github.io">Project Code</a>
+                            </div>
+        
+        
+                            </div>
+
+        
+
+    </div>
+    <div class="container mt-6 ">
+        <div class="card" id='msgCard' >
+        <div class="card-header ">
+            <h1 class="card-header-title is-size-4 px-6 button is-dark">Suggestions</h1>
+        </div>
+        <div class="card-content px-6">
+        <div class="field">
+            <label class="label is-size-5">
+                Name/E-mail:
+            </label>
+            <div class="control ">
+              <input class="input" type="text" placeholder="Enter Name or E-mail" id='name' name='name'>
+            </div>
+        
+          </div>
+          <div class="field">
+            <label class="label is-size-5">
+                Message:
+            </label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Enter Message" id='msg' name='message'>
+            </div>
+        </div>
+        <button class="button is-dark my-3" id="sendBtn">Send</button>
+    </div>
+</div>
+
+<div class="footer has-text-centered mt-3">
+    
+    <p >Copyright 2020- Piyush Barve</p>
+    <p>Contact No. 6268793775</p>
+    
+</div>
+
+
+
+
+
+    <script src=index.js></script>
+</body>
+
+</html>
