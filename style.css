@@ -66,7 +66,7 @@
 
 @media only screen and (max-width:500px){
     html{
-        font-size: 0.83em;
+        font-size: 0.9em;
     }
     
     .columns{
@@ -76,6 +76,9 @@
    
     #social-container{
         padding-left: 2.5rem;
+    }
+    #myname{
+        font-size: 4em;
     }
     .card{
         display: flex;
@@ -88,6 +91,6 @@
 
 @media only screen and (max-width:400px){
     html{
-        font-size: 0.65em;
+        font-size: 0.7em;
     }
 }
