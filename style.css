@@ -14,11 +14,7 @@
     position: fixed;
     
 }
-img{
-    
 
-    
-}
 
 #myname{
     margin-top: 2rem;
@@ -42,7 +38,7 @@ img{
 .fa-instagram{
     font-size: 5em;
     margin-right: 3rem;
-    color:rgb(188, 65, 236);
+    color:rgba(48, 149, 231, 0.863);
 }
 
 .fa-github{
@@ -69,16 +65,29 @@ img{
 }
 
 @media only screen and (max-width:500px){
-    #myname{
-        font-size: 3em;
+    html{
+        font-size: 0.8em;
     }
-    .fa-instagram{
-        font-size: 4em;
+    
+    .columns{
+        display: flex;
+        flex-direction: column;
     }
-    .fa-github{
-        font-size: 4em;
+   
+    #social-container{
+        padding-left: 2.5rem;
     }
-    .fa-google{
-        font-size: 4em;
+    .card{
+        display: flex;
+        flex-direction:column;
+    }
+    .card-content{
+        width: 33rem;
+    }
+}
+
+@media only screen and (max-width:400px){
+    html{
+        font-size: 0.65em;
     }
 }
